@@ -15,5 +15,25 @@ Once the problem is solved, please open a pull request with your solution.
 Install dependencies:
 
 ```sh
+$ npm install -g sequelize-cli
 $ npm install
 ```
+
+Init database:
+
+```sh
+$ sequelize db:migrate
+$ sequelize db:seed:all
+```
+## Run project
+
+run project :
+
+```sh
+$ npm start
+```
+
+## API
+View Api-docs : http://localhost:3000/api-docs
+
+
