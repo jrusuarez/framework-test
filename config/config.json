@@ -1,0 +1,39 @@
+{
+  "development": {
+    "dialect": "sqlite",
+    "storage": "./db.development.sqlite",
+    "logging":false,    
+    "log": {
+      "logType": "file",
+      "logPath": "/log/",
+      "debug": true,
+      "log": true
+    }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "log": {
+      "logType": "file",
+      "logPath": "/log/",
+      "debug": true,
+      "log": true
+    }
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "log": {
+      "logType": "file",
+      "logPath": "/log/",
+      "debug": true,
+      "log": true
+    }
+  }
+}
