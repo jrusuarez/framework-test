@@ -1,6 +1,8 @@
 'use strict';
 
 function isApiKeyValid(apiKey) {
+  if( typeof apiKey === 'undefined' )
+	return 0;
   return apiKey.length > 0;
 }
 

@@ -24,7 +24,7 @@ app.get('/getUserList', (req, res) => {
 
   model.getUserList({offset: offset, limit: limit})
   .then((userList) => {
-    res.status(200).json(userList);
+    return res.status(200).json(userList);
   });
 });
 
@@ -44,7 +44,7 @@ app.post('/addUser', (req, res) => {
 
   model.addUser(req.body)
     .then(() => {
-      res.status(200).send();
+      return res.status(200).send();
     });
 });
 
